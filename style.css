@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --error-Color: #fa4157;
+
+  --primary-Color: #399afa;
+  --secondary-Color: #ffcc33;
+
+  --black-Color: #1f1e1e;
+  --black-light-Color: #323030;
+
+  --disable-Color: #999999;
+
+  --pink-Violet-Circle-Gradient: linear-gradient(
+    144.1deg,
+    #f47373 7.77%,
+    rgba(212, 39, 255, 0.5) 92.64%
+  );
+  --blue-Violet-Circle-Gradient: linear-gradient(
+    144.1deg,
+    #399afa 7.77%,
+    rgba(212, 39, 255, 0.5) 92.64%
+  );
+  --orange-Red-Circle-Gradient: linear-gradient(
+    144.1deg,
+    #f47373 7.77%,
+    rgba(255, 182, 39, 0.14) 92.64%
+  );
+  --yellow-Circle-Gradient: linear-gradient(
+    144.1deg,
+    #ffcc33 7.77%,
+    rgba(255, 204, 51, 0.14) 92.64%
+  );
+
+  --large-Font-Size: 3rem;
+  --medium-large-Font-Size: 2.3rem;
+  --medium-Font-Size: 1.8rem;
+
+  --normal-Font-Size: 1rem;
+  --mini-Font-Size: 0.9rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--black-Color);
+}
+.circle-holder {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.large-circle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(0, -5%);
+  animation: up_down 4000ms ease-in-out infinite;
+}
+.medium-circle {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(0, -5%);
+  animation: up_down 4000ms ease-in-out infinite;
+}
+.small-circle {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(0, -5%);
+  animation: up_down 4000ms ease-in-out infinite;
+}
+.pink-violet-gradient {
+  background: var(--pink-Violet-Circle-Gradient);
+}
+
+.blue-Violet-gradient {
+  background: var(--blue-Violet-Circle-Gradient);
+}
+
+.orange-red-gradient {
+  background: var(--orange-Red-Circle-Gradient);
+}
+.yellow-gradient {
+  background: var(--yellow-Circle-Gradient);
+}
+.desk-circ {
+  display: none;
+}
+.circ-1 {
+  top: 1%;
+  left: 70%;
+}
+.circ-4 {
+  top: 55%;
+  left: 50%;
+}
+.circ-5 {
+  left: 15%;
+  top: 85%;
+}
+@keyframes up_down {
+  50% {
+    transform: translate(0, 5%);
+  }
+  100% {
+    transform: translate(0, -5%);
+  }
+}
+.root {
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+.hero-image {
+  width: 80%;
+  max-width: 425px;
+}
+.review-container {
+  display: none;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+.title-container {
+  color: white;
+}
+.title-container h2 {
+  font-size: var(--medium-Font-Size);
+  padding-bottom: 0.7rem;
+}
+.title-container p {
+  text-align: center;
+  display: none;
+}
+.title-container a {
+  color: var(--secondary-Color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.login-form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+form {
+  width: 95vw;
+  max-width: 560px;
+}
+.inputwrapper label {
+  color: #c4c4c4;
+  display: block;
+  margin: 8px 0;
+}
+.inputwrapper {
+  width: 100%;
+}
+.inputwrapper input {
+  padding: 16px 12px;
+  width: 100%;
+  border-radius: 5px;
+  outline-width: 0;
+  border: 0;
+  backdrop-filter: blur(15px) saturate(147%);
+  -webkit-backdrop-filter: blur(15px) saturate(147%);
+  background-color: rgba(82, 82, 82, 0.19);
+  border-radius: 12px;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--primary-Color);
+  border-radius: 8px;
+  font-size: var(--normal-Font-Size);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 300ms;
+  margin: 1rem 0;
+}
+.btn:hover {
+  background-color: var(--primary-Color);
+}
+
+.login-btn {
+  border: 2px solid var(--secondary-Color);
+}
+.login-btn:hover {
+  background-color: var(--secondary-Color);
+}
+
+.email {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .circ-6 {
+    display: block;
+    top: 15%;
+    left: 5%;
+  }
+  .circ-4 {
+    left: 50%;
+    top: 38%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title-container p {
+    display: block;
+  }
+  .desk-circ {
+    display: block;
+  }
+  .root {
+    height: 100vh;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .hero-image-container {
+    width: 60vw;
+  }
+  .form-container {
+    width: 40vw;
+  }
+  .login-form-container form {
+    max-width: 560px;
+  }
+  .hero-image {
+    max-width: 725px;
+  }
+  .title-container h2 {
+    font-size: var(--medium-large-Font-Size);
+  }
+  .title-container p {
+    font-size: 1.2rem;
+  }
+  .inputwrapper {
+    margin: 1.5rem 0;
+  }
+
+  .circ-1 {
+    left: 88%;
+  }
+  .circ-2 {
+    top: 10%;
+    left: 2%;
+  }
+  .circ-3 {
+    top: 18%;
+    left: 45%;
+  }
+  .circ-4 {
+    top: 50%;
+    left: 38%;
+  }
+  .circ-5 {
+    top: 78%;
+    left: 5%;
+  }
+  .circ-6 {
+    top: 76%;
+    left: 47%;
+  }
+  .circ-7 {
+    top: 85%;
+    left: 68%;
+  }
+  .login-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .review-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px) saturate(147%);
+    background-color: rgba(80, 80, 80, 0.19);
+    border-radius: 12px;
+    color: white;
+    padding: 1.5rem;
+    width: 28rem;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+  }
+  .review-container .review {
+    font-family: "Poppins", sans-serif;
+    line-height: 32px;
+    font-size: var(--mini-Font-Size);
+  }
+  .review-container .review-name {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--secondary-Color);
+    font-size: 1.3rem;
+  }
+}
+
+.error-message {
+  color: rgb(250, 79, 79);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+  height: 1.1rem;
+}

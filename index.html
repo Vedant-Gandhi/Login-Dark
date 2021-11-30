@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div class="circle-holder">
+      <div class="large-circle pink-violet-gradient circ-1"></div>
+      <div class="large-circle pink-violet-gradient desk-circ circ-2"></div>
+      <div class="medium-circle blue-Violet-gradient desk-circ circ-3"></div>
+      <div class="medium-circle orange-red-gradient circ-4"></div>
+      <div class="large-circle blue-Violet-gradient circ-5"></div>
+      <div class="small-circle yellow-gradient desk-circ circ-6"></div>
+      <div class="small-circle orange-red-gradient desk-circ circ-7"></div>
+    </div>
+    <div class="root">
+      <section class="hero-image-container">
+        <img
+          src="./assets/background-3d-character.png"
+          alt=""
+          class="hero-image"
+        />
+        <section class="review-container">
+          <p class="review">
+            The onboarding process was so easy and fast and also the tool just
+            feels native to me.I have been using it now for 4 years and I am
+            very happy with it.
+          </p>
+          <p class="review-name">- John Doe</p>
+        </section>
+      </section>
+      <section class="form-container">
+        <div class="title-container">
+          <h2>Create New Account</h2>
+          <p>Already using the app? &nbsp; <a href="/">Login Now</a></p>
+        </div>
+
+        <div class="login-form-container">
+          <form>
+            <div class="inputwrapper">
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username" />
+              <p class="error-message" id="username-error-message"></p>
+            </div>
+            <div class="inputwrapper">
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" />
+              <p class="error-message" id="password-error-message"></p>
+            </div>
+            <div class="inputwrapper">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" class="email" />
+              <p class="error-message" id="email-error-message"></p>
+            </div>
+            <input type="submit" name="Submit" id="Submit" class="btn" />
+            <input
+              type="button"
+              name="Log_In"
+              id="Log_In"
+              value="Log In"
+              class="btn login-btn"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
